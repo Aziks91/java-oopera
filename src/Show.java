@@ -39,7 +39,7 @@ public class Show {
 
     public void replacementActor(Actor newActor, String surname) {
         for (int i = 0; i < listOfActors.size(); i++) {
-            if (listOfActors.get(i).surname.equals(surname)) {
+            if (listOfActors.get(i).getSurname().equals(surname)) {
                 listOfActors.set(i, newActor);
                 return;
             }
